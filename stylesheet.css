@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #7F7063;
+    font-family: inconsolata, arial;
+}
+
+#top-nav {
+    margin: 0;
+    padding: 0;
+    height: 75px;
+    background-color: #1C1612;
+}
+
+#top-nav ul {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#top-nav ul li {
+    margin: 0;
+    padding: 25px;
+    display: inline-block;
+    text-decoration: none;
+    height: 25px;
+    text-align: center;
+    color: ghostwhite;
+}
+
+#top-nav ul li a{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    width: auto;
+    background-color: #083E2C;
+}
+
+#pagecenterer  {
+    margin: 0;
+    padding: 0;
+    margin-top: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 750px
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    float: left;
+    clear: all;
+    width: 225px;
+}
+
+ul.nav {
+    margin: 0;
+    padding: 0;
+    padding-left: 25px;
+    padding-top: 20px;
+    background-color: #795029;
+    height: 300px;
+    width: 225px;
+    list-style: none;
+    border-radius: 15px;
+}
+
+ul.nav li {
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+ul.nav li a {
+    margin: 0;
+    padding: 0;
+    font: arial;
+    font-size: 14px;
+    font-weight: 800;
+    color: #3C2714;
+    text-decoration: none;
+
+}
+
+ul.nav li a:hover {
+    color: white;
+}
+
+#langswitch {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    list-style: none;
+}
+
+#langswitch li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.en-flag {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.nl-flag {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.content {
+    margin: 0px;
+    padding: 0px;
+    float: right;
+    clear: all;
+    width: 750px;
+    margin-top: 1%;
+}
+
+footer {
+    margin: 0;
+    padding: 2px;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 50px;
+    background-color: #706257;
+    border-radius: 10px 10px 0px 0px;
+}
+
+footer a {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    text-decoration: none;
+    font-family: arial;
+    color: #251E14;
+    font-size: 14px;
+}
+
+footer h5 {
+    margin: 18px;
+    padding: 0;
+    display: inline-block;
+    font-family: arial;
+    color: #251E14;
+}
+
