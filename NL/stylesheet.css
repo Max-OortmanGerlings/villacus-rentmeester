@@ -53,9 +53,11 @@ header {
     margin: 0;
     padding: 0;
     margin-top: 1%;
-    margin-left: 20%;
-    margin-right: 20%;
-    height: 750px
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 15%;
+    height: 1000px;
+    max-height: 2000px;
 }
 
 nav {
@@ -63,17 +65,17 @@ nav {
     padding: 0;
     float: left;
     clear: all;
-    width: 225px;
+    height: auto;
 }
 
 ul.nav {
     margin: 0;
     padding: 0;
-    padding-left: 25px;
-    padding-top: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
     background-color: #795029;
-    height: 300px;
-    width: 225px;
     list-style: none;
     border-radius: 15px;
 }
@@ -81,20 +83,41 @@ ul.nav {
 ul.nav li {
     margin: 0;
     padding: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ul#nested {
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+
+ul#nested li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul#nested li a {
+    margin: 0;
+    padding: 0;
+    color: #8C6038;
+}
+
+ul#nested li a:hover {
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
 }
 
 ul.nav li a {
     margin: 0;
     padding: 0;
     font: arial;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 800;
     color: #3C2714;
     text-decoration: none;
-
 }
 
 ul.nav li a:hover {
@@ -113,6 +136,7 @@ ul.nav li a:hover {
     margin: 0;
     padding: 0;
     display: inline-block;
+    margin-right: 1%;
 }
 
 .en-flag {
@@ -132,8 +156,39 @@ ul.nav li a:hover {
     padding: 0px;
     float: right;
     clear: all;
-    width: 750px;
-    margin-top: 1%;
+    max-width: 550px;
+    margin-top: 4%;
+    line-height: 1.5;
+    color: #002561;
+}
+
+.content h2 {
+    margin: 0;
+    padding: 0;
+    color: #57C4FF;
+}
+
+.content table {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.content ol {
+    margin: 0;
+    padding: 0 0 0 20px;
+    color: #002561;
+}
+
+.content ul {
+    margin: 0;
+    padding: 0 0 0 20px;
+    color: #002561;
+}
+
+.content ol li ul {
+    margin: 0;
+    padding: 0 0 0 40px;
 }
 
 footer {
@@ -158,11 +213,18 @@ footer a {
     font-size: 14px;
 }
 
+footer a:hover {
+    color: #452d2b;
+}
+
 footer h5 {
-    margin: 18px;
+    margin: 18px 0px 18px 30px;
     padding: 0;
     display: inline-block;
     font-family: arial;
     color: #251E14;
 }
+
+
+
 
