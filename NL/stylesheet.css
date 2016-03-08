@@ -58,6 +58,7 @@ header {
     margin-bottom: 15%;
     height: 1000px;
     max-height: 2000px;
+    width: 70%;
 }
 
 nav {
@@ -224,7 +225,3 @@ footer h5 {
     font-family: arial;
     color: #251E14;
 }
-
-
-
-
