@@ -1,0 +1,91 @@
+/* VIEWPORT RESPONSIVE */
+
+@viewport{
+    zoom: 1.0;
+    width: device-width;
+}
+
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* MAIN-PAGE */
+.header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../IMG/landscape.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-lead {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: uppercase;
+  font-size: 25px;
+  text-shadow: 2px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+i.header-icon {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%);
+  color: white;
+  font-size: 50px;
+}
+
+/* CTA THUMBNAIL */
+.cta-thumbnail {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  z-index: 1;
+}
+
+.cta-thumbnail a {
+  padding: 3em 1em;
+  width: 20%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-thumbnail a:hover {
+  width: 30%;
+}
+
+#BeheerLandelijkGebied {
+  background: radial-gradient(at top, #536140, #2E3B1E);
+}
+#RuimtelijkBestuursrecht {
+  background: radial-gradient(at top, #678871, #405F49);
+}
+#Ontwikkeling {
+  background: radial-gradient(at top, #5F82B4, #395886);
+}
+#TaxatieLandelijk {
+  background: radial-gradient(at top, #51698D, #2E4464);
+}
+#Bedrijf {
+  background: radial-gradient(at top, #3F5E8E, #1E3964);
+}
+
+@media (max-width: 700px) {
+
+}
