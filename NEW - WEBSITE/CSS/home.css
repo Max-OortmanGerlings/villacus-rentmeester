@@ -35,6 +35,7 @@ body, html {
   text-transform: uppercase;
   font-size: 25px;
   text-shadow: 2px 0px 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 
 i.header-icon {
@@ -49,14 +50,14 @@ i.header-icon {
 /* CTA THUMBNAIL */
 .cta-thumbnail {
   display: flex;
-  flex-direction: row;
-  width: auto;
+  flex-flow: row wrap;
+  width: 100%;
   z-index: 1;
+  height: 100px;
 }
 
 .cta-thumbnail a {
-  padding: 3em 1em;
-  width: 20%;
+  flex: 1 20%;
   text-align: center;
   text-decoration: none;
   color: white;
@@ -67,7 +68,7 @@ i.header-icon {
 }
 
 .cta-thumbnail a:hover {
-  width: 30%;
+  flex-grow: 2;
 }
 
 #BeheerLandelijkGebied {
@@ -86,6 +87,20 @@ i.header-icon {
   background: radial-gradient(at top, #3F5E8E, #1E3964);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
 
+  .cta-thumbnail a {
+    padding: calc(30px - 0.5em) 0;
+    flex: 1 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .cta-thumbnail {
+    flex-flow: column;
+  }
+  .cta-thumbnail a {
+    padding: calc(40px - 0.5em) 0;
+    flex: 1;
+  }
 }
