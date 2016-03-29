@@ -9,11 +9,12 @@
     width: extend-to-zoom;
     zoom: 1.0;
 }
-
+/* GENERAL */
 body, html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* MAIN-PAGE */
@@ -33,8 +34,9 @@ body, html {
   transform: translate(-50%, -50%);
   color: white;
   text-transform: uppercase;
-  font-size: 25px;
-  text-shadow: 2px 0px 2px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  font-size: 40px;
+  text-shadow: 2px 0px 2px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
@@ -47,52 +49,69 @@ i.header-icon {
   font-size: 50px;
 }
 
+@media (max-width: 600px) {
+  .header-lead {
+    font-size: 30px;
+  }
+
+}
+
 /* CTA THUMBNAIL */
 .cta-thumbnail {
+  margin: 0;
   display: flex;
   flex-flow: row wrap;
   width: 100%;
   z-index: 1;
-  height: 100px;
+  max-height: 200px;
 }
 
 .cta-thumbnail a {
-  flex: 1 20%;
+  padding: 3em 0;
+  flex: 1;
   text-align: center;
   text-decoration: none;
-  color: white;
+  color: rgba(255, 255, 255, 0.3);;
   font-size: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.2s ease-in-out;
+  transition-delay: 0.15s;
 }
 
 .cta-thumbnail a:hover {
   flex-grow: 2;
+  color: white;
 }
 
-#BeheerLandelijkGebied {
+#Link-BeheerLandelijkGebied {
   background: radial-gradient(at top, #536140, #2E3B1E);
 }
-#RuimtelijkBestuursrecht {
+
+#Link-RuimtelijkBestuursrecht {
   background: radial-gradient(at top, #678871, #405F49);
 }
-#Ontwikkeling {
+#Link-Ontwikkeling {
   background: radial-gradient(at top, #5F82B4, #395886);
 }
-#TaxatieLandelijk {
+#Link-TaxatieLandelijk {
   background: radial-gradient(at top, #51698D, #2E4464);
 }
-#Bedrijf {
+#Link-Bedrijf {
   background: radial-gradient(at top, #3F5E8E, #1E3964);
 }
 
 @media (max-width: 600px) {
-
   .cta-thumbnail a {
-    padding: calc(30px - 0.5em) 0;
     flex: 1 50%;
+    color: white;
   }
+
+  .cta-thumbnail {
+      max-height: 350px;
+  }
+
 }
 
 @media (max-width: 400px) {
@@ -103,4 +122,91 @@ i.header-icon {
     padding: calc(40px - 0.5em) 0;
     flex: 1;
   }
+}
+
+/* FOOTER */
+footer {
+  margin: 0;
+  height: 300px;
+  width: auto;
+}
+
+.main-footer {
+  height: 90%;
+  background-color: #335e14;
+  position: relative;
+}
+
+.main-footer p {
+  margin: 0 auto;
+  padding: 35px 0 0;
+  max-width: 600px;
+  color: #CBD1C7;
+  text-align: justify;
+  font-weight: 100;
+}
+
+.main-footer a {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 40px;
+  text-decoration: none;
+  color: #304e14;
+}
+
+.main-footer a:hover {
+  color: #20ee11;
+}
+
+.sub-footer {
+  height: 10%;
+  background-color: #304e1e;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sub-footer h6 {
+  margin: 0 4em;
+  color: rgba(150, 200, 100, 0.7);
+}
+
+@media (max-width: 600px)  {
+  .main-footer p {
+    font-size: 12px;
+    padding: 50px 50px 0;
+  }
+
+  .main-footer a {
+    font-size: 30px;
+    right: 15px;
+    top: 15px;
+  }
+
+  .sub-footer h6 {
+    font-size: 10px;
+  }
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: absolute;
+  margin: 30px 50px;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: pink;
+}
+
+i.close-modal {
+  position: absolute;
+  right: -15px;
+  top: -20px;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
 }
