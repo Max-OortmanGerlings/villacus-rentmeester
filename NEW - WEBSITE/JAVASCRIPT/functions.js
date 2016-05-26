@@ -33,4 +33,10 @@ $(function() {
     $('.modal').css('display','none');
     return false;
   });
+
+  if($('.modal').css('display') == 'block') {
+    $('a').click(function(){
+      return false;
+    });
+  };
 });

@@ -27,14 +27,29 @@ body, html {
   background-size: cover;
 }
 
+.header img {
+  /*position: absolute;
+  top: 50px;
+  left: 35px;*/
+  margin: 50px 20px 0;
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+}
+
+.text {
+  margin: 50px 20px 0;
+  display: inline-block;
+}
+
 .header-lead {
-  position: absolute;
+  /*position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
   color: white;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 40px;
   text-shadow: 2px 0px 2px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -49,12 +64,38 @@ i.header-icon {
   font-size: 50px;
 }
 
-@media (max-width: 600px) {
-  .header-lead {
-    font-size: 30px;
+@media (max-width: 700px) {
+  .header-lead{
+    margin: 200px 10px 0;
+    position: relative;
+    display: inline-block;
+    font-size: 25px;
+    left: 0;
+    top: 0;
+    width: 60%;
+    transform: translate(0, 0);
   }
-
+  .header img {
+    margin: 200px 10px 0;
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    height: 100px;
+    transform: translateY(-50%);
+    left: 0;
+  }
 }
+
+@media (max-width: 450px) {
+  .header img, .header-lead {
+    display: block;
+    margin: 0;
+    padding: 40px 0;
+    transform: translateY(0);
+    width: 100%;
+  }
+}
+
 
 /* CTA THUMBNAIL */
 .cta-thumbnail {
@@ -198,15 +239,35 @@ footer {
   right: 0;
   top: 0;
   left: 0;
-  bottom: 0;
+  bottom: -400px;
   background-color: pink;
+  border-radius: 10px;
+  height: 750px;
+  /*overflow: scroll;*/
+}
+
+.modal::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+  margin: 20px;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  height: 10px;
+  width: 2px;
+  border-radius: 10px;
+  background-color: green;
 }
 
 i.close-modal {
   position: absolute;
-  right: -15px;
-  top: -20px;
+  right: 10px;
+  top: 10px;
   color: black;
   font-size: 20px;
   cursor: pointer;
+}
+
+.modal-links {
+  height: 2000px;
 }
